@@ -1,4 +1,4 @@
-var questions = (
+var questions = [
   {
     prompt: "What Color are Bananas?\n(a) Blue\n\(b) Purple\n(c) Yellow\n(d) Orange",
     answer: "c"
@@ -36,4 +36,19 @@ var questions = (
     prompt: "What programming language runs in all browsers and requires no installation?\n(a) JavaScript\n\(b) Ruby\n(c) Java\n(d) Phython",
     answer: "a"
   },
-)
+]
+
+var score =0;
+
+
+for(var i=0; i < questions.length; i++){
+var response = window.prompt(questions[i].prompt);
+if(response == questions[i].answer){
+  score++;
+  alert("Nice Job! You got it right.");
+}
+else{
+  alert("Sorry that is wrong!");
+}
+}
+alert("you got" + score + "/" + questions.length);
