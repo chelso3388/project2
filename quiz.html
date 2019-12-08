@@ -8,11 +8,108 @@
     <title>Programming Language Quiz</title>
   </head>
   <body>
+<h1>Quiz Instructions</h1>
+<p>Select the correct answer</p>
+
+<div id="wrapper">
+  <h1>What Programming Language should you learn?</h1>
+  <p>Take this questionnaire to find out!</p>
+
+  <form id="quiz">
+    <!-- Question 1 -->
+    <h2>What Color are Bananas?</h2>
+
+    <label><input type="radio" name="q1" value="c1">
+      Blue
+    </label><br />
+    <label><input type="radio" name="q1" value="c2">
+      Purple
+    </label><br />
+    <label><input type="radio" name="q1" value="c3">
+      Yellow
+    </label><br />
+    <label><input type="radio" name="q1" value="c4">
+      Orange
+    </label><br />
+
+    <!-- Question 2 -->
+    <h2>What state only borders one state?</h2>
+
+    <label><input type="radio" name="q2" value="c1">
+      New York
+    </label><br />
+    <label><input type="radio" name="q2" value="c2">
+      Hawaii
+    </label><br />
+    <label><input type="radio" name="q2" value="c3">
+      Maine
+    </label><br />
+    <label><input type="radio" name="q2" value="c4">
+      Alaska
+    </label><br />
+
+    <!-- Question 3 -->
+    <h2>What Programming Language is named after Coffee?</h2>
+
+    <label><input type="radio" name="q3" value="c1">
+      Ruby
+    </label><br />
+    <label><input type="radio" name="q3" value="c2">
+      JavaScript
+    </label><br />
+    <label><input type="radio" name="q3" value="c3">
+      Swift
+    </label><br />
+    <label><input type="radio" name="q3" value="c4">
+      Python
+    </label><br />
+
+    <!-- Question 4 -->
+    <h2>what nut is a member of the Peach family?</h2>
+    <!-- Choices for the fourth question -->
+    <label><input type="radio" name="q4" value="c1">
+      Almond
+    </label><br />
+    <label><input type="radio" name="q4" value="c2">
+      Peanuts
+    </label><br />
+    <label><input type="radio" name="q4" value="c3">
+      Walnuts
+    </label><br />
+    <label><input type="radio" name="q4" value="c4">
+      Pistachio
+    </label><br />
+
+    <h2>Where was Hawaiian pizza invented?</h2>
+    <!-- Choices for the fourth question -->
+    <label><input type="radio" name="q5" value="c1">
+      Middle-Earth
+    </label><br />
+    <label><input type="radio" name="q5" value="c2">
+      Canada
+    </label><br />
+    <label><input type="radio" name="q5" value="c3">
+      England
+    </label><br />
+    <label><input type="radio" name="q5" value="c4">
+      Hawaii
+    </label><br />
+
+    <button type="submit" id="submit" onclick="tabulateAnswers()">Submit Your Answers</button>
+  <button type="reset" id="reset" onclick="resetAnswer()">Reset</button>
+  </form>
+
+
+  <div id="answer">Your result will show up here!</div>
+</div>
 
 
 
 
-</body> 
+
+
+
+</body>
 
 
 </html>

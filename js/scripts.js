@@ -35,9 +35,8 @@ var questions = [
   {
     prompt: "What programming language runs in all browsers and requires no installation?\n(a) JavaScript\n\(b) Ruby\n(c) Java\n(d) Phython",
     answer: "a"
-  },
-]
-
+  }
+ });
 var score =0;
 
 
@@ -47,8 +46,11 @@ if(response == questions[i].answer){
   score++;
   alert("Nice Job! You got it right.");
 }
-else{
+else if{
   alert("Sorry that is wrong!");
 }
-}
+
 alert("you got" + score + "/" + questions.length);
+
+}
+});
